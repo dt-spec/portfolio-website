@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Dev Tiwari — Product & Design</title>
+    <meta name="description" content="Dev Tiwari's portfolio — Product Designer and Builder based in Calgary, AB. Currently studying CS + Economics at UAlberta." />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Dev Tiwari</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Dev Tiwari</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -30,353 +31,274 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Dev Tiwari</h1>
+        <p class="hero-subtitle">Product Designer & Builder</p>
+        <p class="hero-location">Calgary, AB — Open to relocation</p>
+        <div class="hero-links">
+          <a href="https://koffeeyap.ca" target="_blank" rel="noopener noreferrer" class="hero-link-primary">
+            <span class="link-label">Featured Project</span>
+            <span class="link-text">koffeeyap.ca →</span>
+          </a>
+          <a href="#work" class="hero-link-secondary">View work</a>
         </div>
       </div>
     </section>
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+      <div class="section-header">
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a product designer and builder based in Calgary, currently pursuing a BSc in Computer Science with an Economics minor at the University of Alberta (graduating May 2027).</p>
+          <p>I'm passionate about creating thoughtful products that connect people and solve real problems. From founding Koffeeyap to working with cross-functional teams at startups, I thrive at the intersection of design, technology, and human behavior.</p>
+          <p>I believe great products come from deep empathy, rapid iteration, and a willingness to ship and learn. Whether it's designing user flows in Figma, building prototypes in code, or talking to users in coffee shops, I'm always looking for ways to make experiences better.</p>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
+        <div class="about-details">
+          <div class="detail-item">
+            <h3>Education</h3>
+            <p>University of Alberta</p>
+            <p class="detail-meta">BSc Computer Science + Economics</p>
+            <p class="detail-meta">Graduating May 2027</p>
           </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+          <div class="detail-item">
+            <h3>Contact</h3>
+            <p><a href="mailto:devkumar@ualberta.ca">devkumar@ualberta.ca</a></p>
+            <p><a href="tel:5875781808">587-578-1808</a></p>
+          </div>
+          <div class="detail-item">
+            <h3>Links</h3>
+            <p><a href="https://linkedin.com/in/dev-tiwari-99a047209" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            <p><a href="https://github.com/dt-spec" target="_blank" rel="noopener noreferrer">GitHub</a></p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+
+    <section id="work">
+      <div class="section-header">
+        <h2 class="section-title">Work</h2>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+
+      <div class="work-grid">
+        <article class="work-item featured">
+          <div class="work-header">
+            <h3 class="work-title">Koffeeyap</h3>
+            <span class="work-tag">Featured Project</span>
+          </div>
+          <p class="work-role">Founder & Product Lead</p>
+          <p class="work-date">2024 – Present</p>
+          
+          <div class="work-description">
+            <div class="work-section">
+              <h4>Problem</h4>
+              <p>Calgary has a vibrant coffee culture and professional community, but no dedicated way for people to discover and connect over coffee meetups in real life. Existing platforms were too generic or focused on dating rather than genuine networking and community building.</p>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            
+            <div class="work-section">
+              <h4>Process</h4>
+              <p>Designed and built the full product from the ground up — conducting user research with local coffee enthusiasts, mapping user journeys, creating wireframes and prototypes in Figma, and developing the web platform. Established strategic partnerships with Calgary cafés to create authentic meetup venues and cultivated a network of ambassadors and creators to drive community growth.</p>
+            </div>
+            
+            <div class="work-section">
+              <h4>Outcome</h4>
+              <p>Launched <a href="https://koffeeyap.ca" target="_blank" rel="noopener noreferrer" class="inline-link">koffeeyap.ca</a> as a live platform connecting Calgarians through coffee meetups. Successfully partnered with local cafés and built an initial community of users and ambassadors, validating product-market fit through real-world usage and positive community feedback.</p>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+        </article>
+
+        <article class="work-item">
+          <div class="work-header">
+            <h3 class="work-title">Krafzen</h3>
+          </div>
+          <p class="work-role">Full Stack (AI) Intern</p>
+          <p class="work-date">Sept – Dec 2025</p>
+          
+          <div class="work-description">
+            <div class="work-section">
+              <h4>Problem</h4>
+              <p>Product teams lacked visibility into user behavior and struggled to make data-driven decisions. User research artifacts were scattered, making it difficult to synthesize insights and align cross-functional stakeholders.</p>
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            
+            <div class="work-section">
+              <h4>Process</h4>
+              <p>Designed and built analytics dashboards from scratch, working closely with PMs and developers to define requirements. Created detailed personas, journey maps, and wireframes in Figma. Collaborated with engineering to debug API issues and ensure smooth integration. Supported 15+ teammates across product, design, and engineering.</p>
+            </div>
+            
+            <div class="work-section">
+              <h4>Outcome</h4>
+              <p>Shipped multiple dashboards that became core tools for product decision-making. Delivered comprehensive UX artifacts that improved team alignment and informed roadmap prioritization. Contributed to a more collaborative, user-centered product culture.</p>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+        </article>
+
+        <article class="work-item">
+          <div class="work-header">
+            <h3 class="work-title">DEG Engineering</h3>
+          </div>
+          <p class="work-role">Engineering Co-op</p>
+          <p class="work-date">May – Aug 2026</p>
+          
+          <div class="work-description">
+            <div class="work-section">
+              <h4>Problem</h4>
+              <p>Industrial sensor data contained critical anomalies that went undetected, leading to potential equipment failures and maintenance delays. Document processing was manual and time-consuming, creating bottlenecks in engineering workflows.</p>
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            
+            <div class="work-section">
+              <h4>Process</h4>
+              <p>Built an anomaly detection system using Isolation Forest and PCA algorithms to identify outliers in real-time sensor data. Owned the full lifecycle of an SDK document analyzer pipeline — gathering requirements, designing the architecture, implementing the solution, and deploying to production.</p>
+            </div>
+            
+            <div class="work-section">
+              <h4>Outcome</h4>
+              <p>Deployed ML-powered anomaly detection that improved equipment monitoring reliability. Delivered an automated document analyzer pipeline projected to save over $25,000 annually in manual processing time, while improving accuracy and turnaround speed.</p>
             </div>
           </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
+        </article>
+
+        <article class="work-item">
+          <div class="work-header">
+            <h3 class="work-title">Circle App</h3>
+          </div>
+          <p class="work-role">Team Lead & Product Designer</p>
+          <p class="work-date">natIgnite Hackathon — Top 3 · Aug 2025</p>
+          
+          <div class="work-description">
+            <div class="work-section">
+              <h4>Problem</h4>
+              <p>Seniors often face social isolation and struggle to use complex technology. Existing social apps were not designed with accessibility or the specific needs of older adults in mind.</p>
+            </div>
+            
+            <div class="work-section">
+              <h4>Process</h4>
+              <p>Led a 3-person team through rapid ideation, user research, and prototype development. Prioritized accessibility throughout the design process — large touch targets, high-contrast UI, simple navigation, and clear visual hierarchy. Conducted user testing with seniors to validate design decisions.</p>
+            </div>
+            
+            <div class="work-section">
+              <h4>Outcome</h4>
+              <p>Placed in the Top 3 at natIgnite. Post-event user surveys showed 90% positive feedback from senior testers, validating our accessibility-first approach and user-centered design process.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-item">
+          <div class="work-header">
+            <h3 class="work-title">Kick Whispers Extension</h3>
+          </div>
+          <p class="work-role">Creator & Developer</p>
+          <p class="work-date">2024 – Published</p>
+          
+          <div class="work-description">
+            <div class="work-section">
+              <h4>Problem</h4>
+              <p>Streaming platform moderators needed better tools to manage chat whispers and automate repetitive moderation tasks. Existing solutions were fragmented and lacked AI-powered capabilities.</p>
+            </div>
+            
+            <div class="work-section">
+              <h4>Process</h4>
+              <p>Built a Chrome extension integrating MCP (Model Context Protocol) for AI-powered chat moderation. Developed Google Apps Script automations to streamline moderator workflows. Published to the Chrome Web Store and gathered user feedback for iterative improvements.</p>
+            </div>
+            
+            <div class="work-section">
+              <h4>Outcome</h4>
+              <p>Published and actively used by Kick streamers and moderators. Demonstrated ability to ship a complete product end-to-end — from identifying a user need to building, publishing, and supporting a real-world tool.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+    <section id="skills">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Product & Design</h3>
+          <ul>
+            <li>Figma (Wireframing, Prototyping, Design Systems)</li>
+            <li>UI/UX Design</li>
+            <li>User Research & Testing</li>
+            <li>Product Strategy</li>
+            <li>Personas & Journey Mapping</li>
+            <li>Accessibility Design</li>
           </ul>
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <div class="skill-category">
+          <h3>Development</h3>
+          <ul>
+            <li>React & Next.js</li>
+            <li>TypeScript & JavaScript</li>
+            <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>Git & GitHub</li>
+            <li>API Integration</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Data & Analytics</h3>
+          <ul>
+            <li>Machine Learning (Scikit-learn)</li>
+            <li>Data Analysis (Pandas, NumPy)</li>
+            <li>SQL</li>
+            <li>Analytics Dashboards</li>
+            <li>Anomaly Detection (Isolation Forest, PCA)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Collaboration</h3>
+          <ul>
+            <li>Cross-functional Teamwork</li>
+            <li>Stakeholder Communication</li>
+            <li>Agile Methodologies</li>
+            <li>Technical Documentation</li>
+            <li>Community Building</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-header">
+        <h2 class="section-title">Get in touch</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-intro">I'm actively seeking design and product management internships for Summer 2027. Let's connect!</p>
+        <div class="contact-links">
+          <a href="mailto:devkumar@ualberta.ca" class="contact-link">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">devkumar@ualberta.ca</span>
+          </a>
+          <a href="tel:5875781808" class="contact-link">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">587-578-1808</span>
+          </a>
+          <a href="https://linkedin.com/in/dev-tiwari-99a047209" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/dev-tiwari-99a047209</span>
+          </a>
+          <a href="https://github.com/dt-spec" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/dt-spec</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Dev Tiwari</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
